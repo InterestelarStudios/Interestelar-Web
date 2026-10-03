@@ -118,6 +118,15 @@ export interface TranslationSchema {
         platforms: string[];
         highlights: string[];
       };
+      figgo: {
+        title: string;
+        category: string;
+        description: string;
+        longDescription: string;
+        region: string;
+        platforms: string[];
+        highlights: string[];
+      };
     };
     modal: {
       about: string;
@@ -359,6 +368,22 @@ export const translations: Record<Language, TranslationSchema> = {
             "Divulgação clara de serviços médicos, experiência clínica e telemedicina",
             "Integração direta para reserva de consultas e atendimento a pacientes",
             "Design acessível, limpo e profissional focado em credibilidade e conversão",
+          ],
+        },
+        figgo: {
+          title: "Figgo",
+          category: "E-commerce & Landing Page",
+          description:
+            "Landing Page da loja Figgo que trabalha com a venda de Velas Aromáticas em Manaus.",
+          longDescription:
+            "Desenvolvida com tecnologia de alta performance em Next.js, a Landing Page da Figgo apresenta a linha exclusiva de velas aromáticas artesanais produzidas em Manaus. O site combina sofisticação visual, navegação intuitiva, catálogo detalhado de aromas e canal direto para pedidos e atendimento personalizado via WhatsApp.",
+          region: "Brasil",
+          platforms: ["Web"],
+          highlights: [
+            "Landing page moderna e ultrarrápida desenvolvida em Next.js",
+            "Apresentação visual elegante com identidade olfativa e coleções de velas",
+            "Integração direta de contato para conversão e pedidos via WhatsApp",
+            "Design responsivo otimizado para dispositivos móveis e conversão",
           ],
         },
       },
@@ -609,6 +634,22 @@ export const translations: Record<Language, TranslationSchema> = {
             "Accessible, clean, and reassuring design optimized for patient trust",
           ],
         },
+        figgo: {
+          title: "Figgo",
+          category: "E-commerce & Landing Page",
+          description:
+            "Landing page for Figgo, an artisanal scented candle brand based in Manaus.",
+          longDescription:
+            "Engineered with Next.js, Figgo's landing page highlights an artisanal scented candle collection handcrafted in Manaus. Blending clean aesthetics with direct conversion funnels, it showcases olfactory notes, product care, and instant purchase connections via WhatsApp.",
+          region: "Brazil",
+          platforms: ["Web"],
+          highlights: [
+            "Modern, ultra-fast landing page developed with Next.js",
+            "Cozy and sophisticated visual showcase of scented candles and aromas",
+            "Direct WhatsApp order integration for instant customer conversion",
+            "Mobile-first responsive layout tailored for boutique retail",
+          ],
+        },
       },
       modal: {
         about: "About the Project",
@@ -855,6 +896,22 @@ export const translations: Record<Language, TranslationSchema> = {
             "Presentación integral de especialidades clínicas y atención telemática",
             "Enlace directo para reserva de citas médicas y atención a pacientes",
             "Diseño accesible, profesional y centrado en la confianza del paciente",
+          ],
+        },
+        figgo: {
+          title: "Figgo",
+          category: "Comercio Electrónico y Landing Page",
+          description:
+            "Landing page de la tienda Figgo, dedicada a la venta de velas aromáticas en Manaus.",
+          longDescription:
+            "Desarrollada con Next.js, la landing page de Figgo exhibe la línea exclusiva de velas aromáticas artesanales elaboradas en Manaus. Combina un diseño cálido y sofisticado, catálogo visual de aromas y conexión directa para pedidos personalizados a través de WhatsApp.",
+          region: "Brasil",
+          platforms: ["Web"],
+          highlights: [
+            "Landing page moderna y ultrarrápida desarrollada con Next.js",
+            "Presentación visual acogedora y cuidada de velas aromáticas",
+            "Integración directa con WhatsApp para pedidos y consultas ágiles",
+            "Diseño adaptable y optimizado para compras desde móviles",
           ],
         },
       },

@@ -81,6 +81,20 @@ export default function Projects({ onOpenContact }: ProjectsProps) {
       highlights: t.projects.items.drGil.highlights,
       themeColor: "#0284C7",
     },
+    {
+      id: "figgo",
+      title: t.projects.items.figgo.title,
+      category: t.projects.items.figgo.category,
+      image: "/assets/figgo_web.png",
+      url: "https://figgo-website.vercel.app/",
+      tags: ["Next.Js"],
+      description: t.projects.items.figgo.description,
+      longDescription: t.projects.items.figgo.longDescription,
+      region: t.projects.items.figgo.region,
+      platforms: t.projects.items.figgo.platforms,
+      highlights: t.projects.items.figgo.highlights,
+      themeColor: "#E17055",
+    },
   ];
 
   return (
