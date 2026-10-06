@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import ScrollReveal from "./ScrollReveal";
 
 interface TechItem {
   name: string;
@@ -109,30 +110,38 @@ export default function TechStack() {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-[#f8f9fc] border-y border-gray-200 py-6 overflow-hidden">
+    <section className="bg-[#090a12] border-b border-white/[0.08] py-8 overflow-hidden relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Label */}
-          <div className="shrink-0 text-center md:text-left">
-            <span className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-wider">
-              {t.techStack.label}
-            </span>
-          </div>
+          <ScrollReveal direction="left" distance={20} duration={600}>
+            <div className="shrink-0 text-center md:text-left flex items-center space-x-2">
+              <span className="w-2 h-2 rounded-full bg-purple-400 shadow-[0_0_8px_#a855f7]" />
+              <span className="text-xs sm:text-sm font-bold text-gray-400 uppercase tracking-widest">
+                {t.techStack.label}
+              </span>
+            </div>
+          </ScrollReveal>
 
           {/* Tech Badges List */}
-          <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-6">
-            {technologies.map((tech) => (
-              <div
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-4">
+            {technologies.map((tech, index) => (
+              <ScrollReveal
                 key={tech.name}
-                className="flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white border border-gray-200/80 shadow-xs hover:border-blue-400 hover:shadow-sm transition-all duration-200 cursor-default group"
+                direction="up"
+                delay={index * 50}
+                duration={500}
+                distance={20}
               >
-                <div className="group-hover:scale-110 transition-transform">
-                  {tech.icon}
+                <div className="flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:border-purple-400/40 hover:bg-white/[0.07] backdrop-blur-md shadow-lg transition-all duration-200 cursor-default group">
+                  <div className="group-hover:scale-110 transition-transform">
+                    {tech.icon}
+                  </div>
+                  <span className="text-xs sm:text-sm font-medium text-gray-300 group-hover:text-white transition-colors">
+                    {tech.name}
+                  </span>
                 </div>
-                <span className="text-xs sm:text-sm font-medium text-gray-700">
-                  {tech.name}
-                </span>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

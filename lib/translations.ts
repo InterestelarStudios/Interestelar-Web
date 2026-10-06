@@ -4,6 +4,7 @@ export interface TranslationSchema {
   navbar: {
     services: string;
     projects: string;
+    portfolio: string;
     howWeWork: string;
     resources: string;
     contact: string;
@@ -72,6 +73,7 @@ export interface TranslationSchema {
     regionLabel: string;
     platformsLabel: string;
     viewPortfolio: string;
+    viewAll: string;
     items: {
       instrutor: {
         title: string;
@@ -176,6 +178,13 @@ export interface TranslationSchema {
     cnpj: string;
     location: string;
     rightsReserved: string;
+    tagline: string;
+    navTitle: string;
+    contactTitle: string;
+    phoneBrLabel: string;
+    phoneEuLabel: string;
+    emailCustomerLabel: string;
+    emailSupportLabel: string;
   };
   contactModal: {
     badge: string;
@@ -206,6 +215,27 @@ export interface TranslationSchema {
     closeBtn: string;
     whatsappInitialMessage: string;
   };
+  portfolioPage: {
+    badge: string;
+    titleStart: string;
+    titleHighlight: string;
+    titleEnd: string;
+    subtitle: string;
+    filterAll: string;
+    filterMobile: string;
+    filterWeb: string;
+    filterFullstack: string;
+    servicesSectionBadge: string;
+    servicesSectionTitle: string;
+    servicesSectionSubtitle: string;
+    ctaTitle: string;
+    ctaDesc: string;
+    ctaBtn: string;
+    backHome: string;
+    statsProjects: string;
+    statsSatisfaction: string;
+    statsTech: string;
+  };
 }
 
 export const translations: Record<Language, TranslationSchema> = {
@@ -213,6 +243,7 @@ export const translations: Record<Language, TranslationSchema> = {
     navbar: {
       services: "SERVIÇOS",
       projects: "PROJETOS",
+      portfolio: "PORTFÓLIO",
       howWeWork: "COMO TRABALHAMOS",
       resources: "RECURSOS",
       contact: "CONTATO",
@@ -291,6 +322,7 @@ export const translations: Record<Language, TranslationSchema> = {
       regionLabel: "Região",
       platformsLabel: "Plataformas",
       viewPortfolio: "Ver portfólio completo",
+      viewAll: "Ver Todos",
       items: {
         instrutor: {
           title: "Instrutor em Casa",
@@ -442,6 +474,13 @@ export const translations: Record<Language, TranslationSchema> = {
       cnpj: "CNPJ: 55.180.644/0001-09",
       location: "Manaus, Amazonas, Brasil • Atendimento Global",
       rightsReserved: "Todos os direitos reservados.",
+      tagline: "Criamos tecnologias que tornam visões em realidade. Engenharia de software sob medida, aplicativos móveis de alta performance e ecossistemas web escaláveis para empresas inovadoras.",
+      navTitle: "Navegação",
+      contactTitle: "Contatos & Operações",
+      phoneBrLabel: "Brasil (Matriz)",
+      phoneEuLabel: "União Europeia",
+      emailCustomerLabel: "Clientes e Novos Projetos",
+      emailSupportLabel: "Suporte Técnico",
     },
     contactModal: {
       badge: "Consulta Gratuita",
@@ -472,11 +511,33 @@ export const translations: Record<Language, TranslationSchema> = {
       closeBtn: "Fechar",
       whatsappInitialMessage: "Olá! Gostaria de solicitar um orçamento para um projeto com a Interestelar Studios.",
     },
+    portfolioPage: {
+      badge: "NOSSO PORTFÓLIO DE PROJETOS",
+      titleStart: "Engenharia de Software que",
+      titleHighlight: "Transforma Negócios",
+      titleEnd: "e Conquista Mercados",
+      subtitle: "Explore os projetos concebidos, desenvolvidos e entregues com alto padrão pela Interestelar Studios. Aplicativos nativos, ecossistemas web e infraestruturas escaláveis para o Brasil e o mundo.",
+      filterAll: "Todos os Projetos",
+      filterMobile: "Mobile & Apps",
+      filterWeb: "Plataformas Web",
+      filterFullstack: "Full Stack & Cloud",
+      servicesSectionBadge: "CAPACIDADES TÉCNICAS",
+      servicesSectionTitle: "Serviços Especializados que Movem Cada Projeto",
+      servicesSectionSubtitle: "Da concepção estratégica em design à entrega de arquiteturas em nuvem de alto tráfego.",
+      ctaTitle: "Pronto para Criar o Próximo Caso de Sucesso?",
+      ctaDesc: "Nossa equipe de engenharia e produto está pronta para avaliar sua visão e desenhar uma solução sob medida.",
+      ctaBtn: "Solicitar Orçamento Gratuito",
+      backHome: "Voltar para Início",
+      statsProjects: "Projetos Entregues",
+      statsSatisfaction: "Foco em Excelência",
+      statsTech: "Tecnologias de Ponta",
+    },
   },
   en: {
     navbar: {
       services: "SERVICES",
       projects: "PROJECTS",
+      portfolio: "PORTFOLIO",
       howWeWork: "HOW WE WORK",
       resources: "RESOURCES",
       contact: "CONTACT",
@@ -555,6 +616,7 @@ export const translations: Record<Language, TranslationSchema> = {
       regionLabel: "Region",
       platformsLabel: "Platforms",
       viewPortfolio: "View full portfolio",
+      viewAll: "View All",
       items: {
         instrutor: {
           title: "Instrutor em Casa",
@@ -706,6 +768,13 @@ export const translations: Record<Language, TranslationSchema> = {
       cnpj: "CNPJ: 55.180.644/0001-09",
       location: "Manaus, Amazonas, Brazil • Global Delivery",
       rightsReserved: "All rights reserved.",
+      tagline: "We build technologies that turn bold visions into reality. Tailored software engineering, high-performance mobile apps, and scalable web ecosystems for visionary companies.",
+      navTitle: "Navigation",
+      contactTitle: "Contacts & Operations",
+      phoneBrLabel: "Brazil (HQ)",
+      phoneEuLabel: "European Union",
+      emailCustomerLabel: "Clients & New Projects",
+      emailSupportLabel: "Technical Support",
     },
     contactModal: {
       badge: "Free Consultation",
@@ -736,11 +805,33 @@ export const translations: Record<Language, TranslationSchema> = {
       closeBtn: "Close",
       whatsappInitialMessage: "Hello! I'd like to request a proposal for a software project with Interestelar Studios.",
     },
+    portfolioPage: {
+      badge: "OUR SOFTWARE PORTFOLIO",
+      titleStart: "Engineering that",
+      titleHighlight: "Transforms Businesses",
+      titleEnd: "and Conquers Markets",
+      subtitle: "Explore custom digital products conceived, developed, and launched with world-class excellence by Interestelar Studios. Native mobile apps, robust web platforms, and scalable cloud systems.",
+      filterAll: "All Projects",
+      filterMobile: "Mobile & Apps",
+      filterWeb: "Web Platforms",
+      filterFullstack: "Full Stack & Cloud",
+      servicesSectionBadge: "TECHNICAL CAPABILITIES",
+      servicesSectionTitle: "Specialized Services Fueling Every Delivery",
+      servicesSectionSubtitle: "From strategic design thinking to resilient high-traffic cloud backends.",
+      ctaTitle: "Ready to Build Your Next Big Success?",
+      ctaDesc: "Our product engineering team is ready to analyze your requirements and build a high-performance solution.",
+      ctaBtn: "Book Free Consultation",
+      backHome: "Back to Home",
+      statsProjects: "Delivered Projects",
+      statsSatisfaction: "Engineering Excellence",
+      statsTech: "Cutting-Edge Stacks",
+    },
   },
   es: {
     navbar: {
       services: "SERVICIOS",
       projects: "PROYECTOS",
+      portfolio: "PORTAFOLIO",
       howWeWork: "CÓMO TRABAJAMOS",
       resources: "RECURSOS",
       contact: "CONTACTO",
@@ -819,6 +910,7 @@ export const translations: Record<Language, TranslationSchema> = {
       regionLabel: "Región",
       platformsLabel: "Plataformas",
       viewPortfolio: "Ver portafolio completo",
+      viewAll: "Ver Todos",
       items: {
         instrutor: {
           title: "Instrutor em Casa",
@@ -970,6 +1062,13 @@ export const translations: Record<Language, TranslationSchema> = {
       cnpj: "CNPJ: 55.180.644/0001-09",
       location: "Manaos, Amazonas, Brasil • Cobertura Global",
       rightsReserved: "Todos los derechos reservados.",
+      tagline: "Creamos tecnologías que hacen realidad visiones ambiciosas. Ingeniería de software a medida, aplicaciones móviles de alto rendimiento y ecosistemas web escalables.",
+      navTitle: "Navegación",
+      contactTitle: "Contactos y Operaciones",
+      phoneBrLabel: "Brasil (Sede)",
+      phoneEuLabel: "Unión Europea",
+      emailCustomerLabel: "Clientes y Nuevos Proyectos",
+      emailSupportLabel: "Soporte Técnico",
     },
     contactModal: {
       badge: "Consulta Gratuita",
@@ -999,6 +1098,27 @@ export const translations: Record<Language, TranslationSchema> = {
       whatsappTalkNow: "Hablar ahora por WhatsApp",
       closeBtn: "Cerrar",
       whatsappInitialMessage: "¡Hola! Me gustaría solicitar un presupuesto para un proyecto de software con Interestelar Studios.",
+    },
+    portfolioPage: {
+      badge: "NUESTRO PORTAFOLIO DE PROYECTOS",
+      titleStart: "Ingeniería de Software que",
+      titleHighlight: "Transforma Negocios",
+      titleEnd: "y Conquista Mercados",
+      subtitle: "Explore los productos digitales concebidos, desarrollados y entregados con altos estándares por Interestelar Studios. Aplicaciones móviles nativas, plataformas web y sistemas en la nube.",
+      filterAll: "Todos los Proyectos",
+      filterMobile: "Móvil y Apps",
+      filterWeb: "Plataformas Web",
+      filterFullstack: "Full Stack y Cloud",
+      servicesSectionBadge: "CAPACIDADES TÉCNICAS",
+      servicesSectionTitle: "Servicios Especializados que Impulsan Cada Proyecto",
+      servicesSectionSubtitle: "Desde el diseño estratégico UI/UX hasta arquitecturas en la nube de alto rendimiento.",
+      ctaTitle: "¿Listo para Crear su Próximo Caso de Éxito?",
+      ctaDesc: "Nuestro equipo de ingeniería y producto está listo para evaluar su visión y crear una solución a medida.",
+      ctaBtn: "Solicitar Presupuesto Gratuito",
+      backHome: "Volver al Inicio",
+      statsProjects: "Proyectos Entregados",
+      statsSatisfaction: "Enfoque en Excelencia",
+      statsTech: "Tecnologías Modernas",
     },
   },
 };
