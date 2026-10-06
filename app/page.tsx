@@ -20,7 +20,7 @@ export default function Home() {
   const closeContact = () => setContactModalOpen(false);
 
   return (
-    <main className="min-h-screen bg-white selection:bg-[#0062ff] selection:text-white">
+    <main className="min-h-screen bg-[#06070c] text-gray-100 selection:bg-purple-600 selection:text-white">
       {/* Fixed Navigation Bar */}
       <Navbar onOpenContact={openContact} />
 
