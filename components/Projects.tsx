@@ -74,7 +74,7 @@ export default function Projects({ onOpenContact }: ProjectsProps) {
       id: "dr-gil",
       title: t.projects.items.drGil.title,
       category: t.projects.items.drGil.category,
-      image: "/assets/dr-gil.jpg",
+      image: "/assets/drgil_web.png",
       url: "https://www.drguillermogilcalvo.com/",
       tags: ["Next.JS"],
       description: t.projects.items.drGil.description,
