@@ -45,7 +45,7 @@ export default function ReliableApps() {
             <ScrollReveal direction="left" distance={30} duration={650}>
               <div className="space-y-3">
                 <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs text-blue-400 font-semibold tracking-wide">
-                  <span>CONFIABILIDADE & ESCALABILIDADE</span>
+                  <span>{t.reliableApps.badge}</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase tracking-tight leading-[1.15]">
                   {t.reliableApps.title}

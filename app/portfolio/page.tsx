@@ -118,6 +118,20 @@ export default function PortfolioPage() {
       highlights: t.projects.items.figgo.highlights,
       themeColor: "#E17055",
     },
+    {
+      id: "lenne-carneiro",
+      title: t.projects.items.lenneCarneiro.title,
+      category: t.projects.items.lenneCarneiro.category,
+      image: "/assets/lenne_carneiro_web.png",
+      url: "https://lenne-carneiro-web.vercel.app/",
+      tags: ["Javascript", "Firebase", "NextJs"],
+      description: t.projects.items.lenneCarneiro.description,
+      longDescription: t.projects.items.lenneCarneiro.longDescription,
+      region: t.projects.items.lenneCarneiro.region,
+      platforms: t.projects.items.lenneCarneiro.platforms,
+      highlights: t.projects.items.lenneCarneiro.highlights,
+      themeColor: "#DB2777",
+    },
   ], [t]);
 
   // Engineering Services data
@@ -176,7 +190,7 @@ export default function PortfolioPage() {
     }
     if (activeFilter === "web") {
       return projectsData.filter((p) =>
-        p.tags.some((t) => ["Next.JS", "Next.Js", "Web"].includes(t))
+        p.tags.some((t) => ["Next.JS", "Next.Js", "NextJs", "Web"].includes(t))
       );
     }
     if (activeFilter === "fullstack") {
@@ -243,7 +257,7 @@ export default function PortfolioPage() {
               <div className="pt-4 flex flex-wrap items-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-300">
                 <div className="flex items-center space-x-2 px-3.5 py-1.5 rounded-lg bg-white/[0.03] border border-white/10">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]" />
-                  <span className="font-bold text-white">6+</span>
+                  <span className="font-bold text-white">7+</span>
                   <span className="text-gray-400">{t.portfolioPage.statsProjects}</span>
                 </div>
                 <div className="flex items-center space-x-2 px-3.5 py-1.5 rounded-lg bg-white/[0.03] border border-white/10">
@@ -274,10 +288,10 @@ export default function PortfolioPage() {
             <ScrollReveal direction="left" distance={25} duration={600}>
               <div className="space-y-3">
                 <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">
-                  PORTFÓLIO EM DESTAQUE
+                  {t.portfolioPage.projectsSectionBadge}
                 </span>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase text-white tracking-tight">
-                  Casos de Sucesso & Aplicações
+                  {t.portfolioPage.projectsSectionTitle}
                 </h2>
               </div>
             </ScrollReveal>
@@ -486,7 +500,7 @@ export default function PortfolioPage() {
           <ScrollReveal direction="up" distance={30} duration={650}>
             <div className="glass-cinematic-card p-10 sm:p-14 rounded-3xl border border-white/15 space-y-6 shadow-2xl">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs text-blue-400 font-semibold tracking-wide">
-                <span>INICIE SEU PRODUTO CONOSCO</span>
+                <span>{t.portfolioPage.ctaBadge}</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-white tracking-tight leading-tight">

@@ -13,6 +13,7 @@ export interface TranslationSchema {
   };
   hero: {
     tagline: string;
+    subheadline: string;
     titleStart: string;
     titleHighlight: string;
     titleEnd: string;
@@ -30,6 +31,7 @@ export interface TranslationSchema {
     label: string;
   };
   customSolutions: {
+    badge: string;
     titleStart: string;
     titleHighlight: string;
     titleEnd: string;
@@ -43,6 +45,7 @@ export interface TranslationSchema {
     item3Desc: string;
   };
   services: {
+    badge: string;
     title: string;
     description: string;
     cards: {
@@ -55,6 +58,7 @@ export interface TranslationSchema {
     };
   };
   reliableApps: {
+    badge: string;
     title: string;
     feature1Title: string;
     feature1Desc: string;
@@ -68,6 +72,7 @@ export interface TranslationSchema {
     photoBadgeDesc: string;
   };
   projects: {
+    badge: string;
     title: string;
     subtitle: string;
     regionLabel: string;
@@ -129,6 +134,15 @@ export interface TranslationSchema {
         platforms: string[];
         highlights: string[];
       };
+      lenneCarneiro: {
+        title: string;
+        category: string;
+        description: string;
+        longDescription: string;
+        region: string;
+        platforms: string[];
+        highlights: string[];
+      };
     };
     modal: {
       about: string;
@@ -140,6 +154,7 @@ export interface TranslationSchema {
     };
   };
   processFlow: {
+    badge: string;
     title: string;
     description: string;
     stageLabel: string;
@@ -164,6 +179,7 @@ export interface TranslationSchema {
     };
   };
   consultationCTA: {
+    badge: string;
     title: string;
     description: string;
     bullet1: string;
@@ -225,9 +241,12 @@ export interface TranslationSchema {
     filterMobile: string;
     filterWeb: string;
     filterFullstack: string;
+    projectsSectionBadge: string;
+    projectsSectionTitle: string;
     servicesSectionBadge: string;
     servicesSectionTitle: string;
     servicesSectionSubtitle: string;
+    ctaBadge: string;
     ctaTitle: string;
     ctaDesc: string;
     ctaBtn: string;
@@ -252,6 +271,7 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     hero: {
       tagline: "Inovação Digital em Manaus para o Mundo",
+      subheadline: "Software House & Produtos Digitais de Alto Impacto",
       titleStart: "Criamos",
       titleHighlight: "tecnologias",
       titleEnd: "que tornam sua visão realidade",
@@ -270,6 +290,7 @@ export const translations: Record<Language, TranslationSchema> = {
       label: "Nossas Principais Tecnologias",
     },
     customSolutions: {
+      badge: "SOLUÇÕES SOB MEDIDA",
       titleStart: "Sistemas",
       titleHighlight: "personalizados",
       titleEnd: "para seu negócio",
@@ -287,6 +308,7 @@ export const translations: Record<Language, TranslationSchema> = {
         "Quando você precisa de uma solução sob medida, reunimos uma vasta gama de bibliotecas e tecnologias para entregar aplicativos personalizados sem estourar o orçamento.",
     },
     services: {
+      badge: "SERVIÇOS DE ENGENHARIA",
       title: "Nossos serviços de desenvolvimento de software personalizado",
       description:
         "A Interestelar Studios é o lar de especialistas em design e desenvolvimento que oferecem serviços completos. Abrangemos uma ampla gama de serviços de ponta a ponta para ajudar você a construir, expandir e escalar seu negócio online.",
@@ -300,6 +322,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     reliableApps: {
+      badge: "CONFIABILIDADE & ESCALABILIDADE",
       title: "Desenvolvimento de Aplicações Confiáveis",
       feature1Title: "Desbloqueie a mobilidade",
       feature1Desc:
@@ -317,6 +340,7 @@ export const translations: Record<Language, TranslationSchema> = {
       photoBadgeDesc: "Manaus • Brasil & Clientes Globais",
     },
     projects: {
+      badge: "CASES DE SUCESSO",
       title: "Nossos projetos",
       subtitle: "Soluções completas desenhadas e construídas com maestria pela Interestelar Studios.",
       regionLabel: "Região",
@@ -418,6 +442,22 @@ export const translations: Record<Language, TranslationSchema> = {
             "Design responsivo otimizado para dispositivos móveis e conversão",
           ],
         },
+        lenneCarneiro: {
+          title: "Lenne Carneiro",
+          category: "Hub de Imagem & Estilo",
+          description:
+            "Hub de Desenvolvimento Feminino e Consultoria de Imagem e Estilo de Lenne Carneiro.",
+          longDescription:
+            "Plataforma digital e hub de desenvolvimento feminino para a consultora de imagem e estilo Lenne Carneiro. O portal combina elegância estética, posicionamento de marca pessoal e canais diretos para mentorias e consultorias com alcance no Brasil e na Europa.",
+          region: "Brasil e Europa",
+          platforms: ["Web"],
+          highlights: [
+            "Arquitetura moderna e de alta performance desenvolvida em Next.js e Firebase",
+            "Design refinado e sofisticado para posicionamento de marca pessoal e estilo",
+            "Estrutura otimizada para captação de clientes e agendamento de mentorias",
+            "Presença digital com alcance internacional atendendo Brasil e Europa",
+          ],
+        },
       },
       modal: {
         about: "Sobre o Projeto",
@@ -429,6 +469,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     processFlow: {
+      badge: "METODOLOGIA ÁGIL & ORBITAL",
       title: "Nosso processo de desenvolvimento de produtos",
       description:
         "Gerenciamos seus projetos com métodos ágeis comprovados, projetados para alinhar todas as partes interessadas (mesmo as não técnicas). Nosso fluxo de trabalho amplifica a colaboração e acelera os prazos de entrega, permitindo alcançar até mesmo os objetivos mais ambiciosos.",
@@ -459,6 +500,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     consultationCTA: {
+      badge: "AGENDAMENTO & CONSULTORIA",
       title: "Não sabe por onde começar seu projeto de desenvolvimento de produto?",
       description:
         "Sem problemas! Ajudaremos você passo a passo com as escolhas de design, tecnologia e equipe. Ao final, você terá um plano de produto e estimativas de recursos para planejar com maior precisão.",
@@ -521,9 +563,12 @@ export const translations: Record<Language, TranslationSchema> = {
       filterMobile: "Mobile & Apps",
       filterWeb: "Plataformas Web",
       filterFullstack: "Full Stack & Cloud",
+      projectsSectionBadge: "PORTFÓLIO EM DESTAQUE",
+      projectsSectionTitle: "Casos de Sucesso & Aplicações",
       servicesSectionBadge: "CAPACIDADES TÉCNICAS",
       servicesSectionTitle: "Serviços Especializados que Movem Cada Projeto",
       servicesSectionSubtitle: "Da concepção estratégica em design à entrega de arquiteturas em nuvem de alto tráfego.",
+      ctaBadge: "INICIE SEU PRODUTO CONOSCO",
       ctaTitle: "Pronto para Criar o Próximo Caso de Sucesso?",
       ctaDesc: "Nossa equipe de engenharia e produto está pronta para avaliar sua visão e desenhar uma solução sob medida.",
       ctaBtn: "Solicitar Orçamento Gratuito",
@@ -546,6 +591,7 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     hero: {
       tagline: "Digital Innovation from Manaus to the World",
+      subheadline: "Software House & High-Impact Digital Products",
       titleStart: "We create",
       titleHighlight: "technologies",
       titleEnd: "that turn your vision into reality",
@@ -564,6 +610,7 @@ export const translations: Record<Language, TranslationSchema> = {
       label: "Our Core Technologies",
     },
     customSolutions: {
+      badge: "TAILORED SOLUTIONS",
       titleStart: "Customized",
       titleHighlight: "systems",
       titleEnd: "for your business",
@@ -581,6 +628,7 @@ export const translations: Record<Language, TranslationSchema> = {
         "When you need a tailored solution, we bring together cutting-edge frameworks and libraries to deliver custom apps on budget.",
     },
     services: {
+      badge: "ENGINEERING SERVICES",
       title: "Our custom software development services",
       description:
         "Interestelar Studios is home to expert designers and software engineers offering end-to-end services. We cover everything needed to help you build, grow, and scale your online business.",
@@ -594,6 +642,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     reliableApps: {
+      badge: "RELIABILITY & SCALABILITY",
       title: "Engineering Reliable Applications",
       feature1Title: "Unlock mobility",
       feature1Desc:
@@ -611,6 +660,7 @@ export const translations: Record<Language, TranslationSchema> = {
       photoBadgeDesc: "Manaus • Brazil & Global Clients",
     },
     projects: {
+      badge: "SUCCESS STORIES",
       title: "Our projects",
       subtitle: "Full-scale software solutions masterfully designed and built by Interestelar Studios.",
       regionLabel: "Region",
@@ -712,6 +762,22 @@ export const translations: Record<Language, TranslationSchema> = {
             "Mobile-first responsive layout tailored for boutique retail",
           ],
         },
+        lenneCarneiro: {
+          title: "Lenne Carneiro",
+          category: "Image & Style Hub",
+          description:
+            "Women's Development Hub and Image & Style Consulting for Lenne Carneiro.",
+          longDescription:
+            "Digital platform and personal growth hub for image and style consultant Lenne Carneiro. The website merges refined visual design, personal brand elevation, and direct consultation booking channels for clients across Brazil and Europe.",
+          region: "Brazil and Europe",
+          platforms: ["Web"],
+          highlights: [
+            "Modern, high-performance web platform built with Next.js and Firebase",
+            "Sophisticated visual branding tailored for personal style and image consulting",
+            "Optimized client inquiry and mentoring booking experience",
+            "International digital presence serving clients across Brazil and Europe",
+          ],
+        },
       },
       modal: {
         about: "About the Project",
@@ -723,6 +789,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     processFlow: {
+      badge: "AGILE & ORBITAL METHODOLOGY",
       title: "Our product development process",
       description:
         "We manage projects using proven agile frameworks designed to keep all stakeholders aligned (including non-technical founders). Our process accelerates delivery times while fulfilling ambitious technical milestones.",
@@ -753,6 +820,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     consultationCTA: {
+      badge: "CONSULTATION & SCHEDULING",
       title: "Not sure where to begin your software product journey?",
       description:
         "No problem! We guide you step-by-step through technology stacks, UI/UX choices, and architecture. You'll leave with a tangible roadmap and accurate estimates to plan with confidence.",
@@ -815,9 +883,12 @@ export const translations: Record<Language, TranslationSchema> = {
       filterMobile: "Mobile & Apps",
       filterWeb: "Web Platforms",
       filterFullstack: "Full Stack & Cloud",
+      projectsSectionBadge: "FEATURED PORTFOLIO",
+      projectsSectionTitle: "Success Stories & Applications",
       servicesSectionBadge: "TECHNICAL CAPABILITIES",
       servicesSectionTitle: "Specialized Services Fueling Every Delivery",
       servicesSectionSubtitle: "From strategic design thinking to resilient high-traffic cloud backends.",
+      ctaBadge: "LAUNCH YOUR PRODUCT WITH US",
       ctaTitle: "Ready to Build Your Next Big Success?",
       ctaDesc: "Our product engineering team is ready to analyze your requirements and build a high-performance solution.",
       ctaBtn: "Book Free Consultation",
@@ -840,6 +911,7 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     hero: {
       tagline: "Innovación Digital de Manaos para el Mundo",
+      subheadline: "Software House y Productos Digitales de Alto Impacto",
       titleStart: "Creamos",
       titleHighlight: "tecnologías",
       titleEnd: "que hacen realidad su visión",
@@ -858,6 +930,7 @@ export const translations: Record<Language, TranslationSchema> = {
       label: "Nuestras Principales Tecnologías",
     },
     customSolutions: {
+      badge: "SOLUCIONES A MEDIDA",
       titleStart: "Sistemas",
       titleHighlight: "personalizados",
       titleEnd: "para su empresa",
@@ -875,6 +948,7 @@ export const translations: Record<Language, TranslationSchema> = {
         "Cuando necesita una solución personalizada, reunimos una amplia gama de bibliotecas y tecnologías para entregar aplicaciones a medida sin salirse del presupuesto.",
     },
     services: {
+      badge: "SERVICIOS DE INGENIERÍA",
       title: "Nuestros servicios de desarrollo de software personalizado",
       description:
         "Interestelar Studios es el hogar de especialistas en diseño y desarrollo que ofrecen servicios integrales. Abarcamos una amplia gama de soluciones de principio a fin para ayudarle a construir, expandir y escalar su negocio online.",
@@ -888,6 +962,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     reliableApps: {
+      badge: "CONFIABILIDAD Y ESCALABILIDAD",
       title: "Desarrollo de Aplicaciones Fiables",
       feature1Title: "Desbloquee la movilidad",
       feature1Desc:
@@ -905,6 +980,7 @@ export const translations: Record<Language, TranslationSchema> = {
       photoBadgeDesc: "Manaos • Brasil y Clientes Globales",
     },
     projects: {
+      badge: "CASOS DE ÉXITO",
       title: "Nuestros proyectos",
       subtitle: "Soluciones de software integrales diseñadas y construidas con maestría por Interestelar Studios.",
       regionLabel: "Región",
@@ -1006,6 +1082,22 @@ export const translations: Record<Language, TranslationSchema> = {
             "Diseño adaptable y optimizado para compras desde móviles",
           ],
         },
+        lenneCarneiro: {
+          title: "Lenne Carneiro",
+          category: "Hub de Imagen y Estilo",
+          description:
+            "Centro de Desarrollo Femenino y Consultoría de Imagen y Estilo de Lenne Carneiro.",
+          longDescription:
+            "Plataforma digital y centro de desarrollo femenino para la consultora de imagen y estilo Lenne Carneiro. Combina una cuidada estética visual, proyección de marca personal y canales directos para asesorías con alcance en Brasil y Europa.",
+          region: "Brasil e Europa",
+          platforms: ["Web"],
+          highlights: [
+            "Arquitectura web moderna y de alto rendimiento con Next.js y Firebase",
+            "Diseño visual refinado y elegante para consultoría de estilo e imagen personal",
+            "Estructura orientada a la captación y reserva de asesorías",
+            "Presencia digital internacional para clientas en Brasil y Europa",
+          ],
+        },
       },
       modal: {
         about: "Sobre el Proyecto",
@@ -1017,6 +1109,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     processFlow: {
+      badge: "METODOLOGÍA ÁGIL Y ORBITAL",
       title: "Nuestro proceso de desarrollo de productos",
       description:
         "Gestionamos sus proyectos con metodologías ágiles contrastadas, diseñadas para mantener alineados a todos los involucrados (incluidos perfiles no técnicos). Nuestro flujo acelera los plazos de entrega, cumpliendo los objetivos más ambiciosos.",
@@ -1047,6 +1140,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
     },
     consultationCTA: {
+      badge: "ASESORÍA Y RESERVA",
       title: "¿No sabe por dónde empezar su proyecto de desarrollo de software?",
       description:
         "¡Sin problema! Le guiaremos paso a paso en las decisiones de diseño, tecnología y equipo. Al finalizar, dispondrá de una hoja de ruta clara y estimaciones realistas para planificar con total precisión.",
@@ -1109,9 +1203,12 @@ export const translations: Record<Language, TranslationSchema> = {
       filterMobile: "Móvil y Apps",
       filterWeb: "Plataformas Web",
       filterFullstack: "Full Stack y Cloud",
+      projectsSectionBadge: "PORTAFOLIO DESTACADO",
+      projectsSectionTitle: "Casos de Éxito y Aplicaciones",
       servicesSectionBadge: "CAPACIDADES TÉCNICAS",
       servicesSectionTitle: "Servicios Especializados que Impulsan Cada Proyecto",
       servicesSectionSubtitle: "Desde el diseño estratégico UI/UX hasta arquitecturas en la nube de alto rendimiento.",
+      ctaBadge: "INICIE SU PRODUCTO CON NOSOTROS",
       ctaTitle: "¿Listo para Crear su Próximo Caso de Éxito?",
       ctaDesc: "Nuestro equipo de ingeniería y producto está listo para evaluar su visión y crear una solución a medida.",
       ctaBtn: "Solicitar Presupuesto Gratuito",

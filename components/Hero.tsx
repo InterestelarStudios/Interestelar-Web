@@ -76,7 +76,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
         {/* Sub-headline Kicker (Translucent Uppercase font from reference) */}
         <ScrollReveal direction="up" delay={300}>
           <h2 className="mt-3 text-xs sm:text-sm lg:text-base font-bold uppercase tracking-[0.25em] text-gray-400/90 max-w-2xl mx-auto drop-shadow-md">
-            Software House & Produtos Digitais de Alto Impacto
+            {t.hero.subheadline}
           </h2>
         </ScrollReveal>
 

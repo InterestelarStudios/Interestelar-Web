@@ -111,7 +111,7 @@ export default function Projects({ onOpenContact }: ProjectsProps) {
         <ScrollReveal direction="up" distance={30} duration={650}>
           <div className="text-center space-y-4 mb-16">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs text-purple-400 font-semibold tracking-wide">
-              <span>CASES DE SUCESSO</span>
+              <span>{t.projects.badge}</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-white tracking-tight leading-tight">

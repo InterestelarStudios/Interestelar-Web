@@ -46,7 +46,7 @@ export default function CustomSolutions({ onOpenContact }: CustomSolutionsProps)
             <ScrollReveal direction="left" distance={30} duration={700}>
               <div className="space-y-6">
                 <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs text-purple-400 font-semibold tracking-wide">
-                  <span>SOLUÇÕES SOB MEDIDA</span>
+                  <span>{t.customSolutions.badge}</span>
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-white tracking-tight leading-[1.15]">
